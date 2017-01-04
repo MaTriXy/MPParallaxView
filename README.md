@@ -2,7 +2,7 @@
 
 Apple TV Parallax effect in Swift. Rotate view using touch or accelerometer.
 
-<img src="http://i.imgur.com/fvFEQzz.gif" alt="MPParallaxView example">
+![Preview](Resources/demo.gif)
 
 ## Usage
 
@@ -17,13 +17,13 @@ You can easily customize Parallax View in Storyboard! Jump into Example project 
 How about accelerometer parallax instead of touch? Set **Accelerometer Enabled** to **On** in Storyboard.
 
 There are 3 different ways to set up parallax:
-* **.BasedOnHierarchyInParallaxView** - views in background moves less than views in foreground. You can increase the movement by changing multiplerOfIndexInHierarchyToParallaxOffset - this value will be multiplied by index of view in hierarchy. Default.
-* **.BasedOnTag** - set a tag for a view. For instance, snowflakes image view has 13 tag which means noticeable movement. On the other hand, top view with cast members has 1 tag - almost no movement.
-* **.Custom(Int)** - provide your custom value.
+* **.basedOnHierarchyInParallaxView** - views in background moves less than views in foreground. You can increase the movement by changing multiplerOfIndexInHierarchyToParallaxOffset - this value will be multiplied by index of view in hierarchy. Default.
+* **.basedOnTag** - set a tag for a view. For instance, snowflakes image view has 13 tag which means noticeable movement. On the other hand, top view with cast members has 1 tag - almost no movement.
+* **.custom(Int)** - provide your custom value.
 
 ## Requirements
 
-Swift 2.0, iOS 9
+Xcode 8, iOS 9
 
 ## Installation
 
@@ -40,6 +40,9 @@ Michal Pyrka
 Twitter: [mikep_3](https://twitter.com/mike_p3)
 
 ## Other
+
+Check out the article about this repo: [Apple TV Parallax Effect in Swift](http://www.thedroidsonroids.com/blog/ios/apple-tv-parallax-effect-in-swift/)
+
 [Inspired by Designmodo](http://designmodo.com/apple-tv-effect)  
 Thanks [Konstantine Trundayev
 ](https://dribbble.com/k0t) for Interstellar assets!

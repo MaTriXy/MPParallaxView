@@ -14,7 +14,6 @@
 		791FFAE8EE211C556B7FA90F2C776F4F /* MPParallaxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0819F25454C963F2951E1AAEE8BBBF20 /* MPParallaxView.swift */; };
 		7E4960FFB54D01E0B1C45CF36C60BBF1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04CDA4D9A22D73FBFFA2D18D411E5C2 /* Foundation.framework */; };
 		82F74E671D3E8EC2A411F8AFD0887D6E /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBF5464BAF85C191298AF3DA1435FDC /* CoreMotion.framework */; };
-		90AE6185C6B4433ADE7A668914B3C1D4 /* MPParallaxView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A992790B43C32E9028FD3AF5F412E85D /* MPParallaxView.bundle */; };
 		92F736F6FDBE82FCFBC8EF79B544657A /* Pods-MPParallaxView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B6BCCA091C108E91F50F7C2C045D06 /* Pods-MPParallaxView_Example-dummy.m */; };
 		9D7F43EF7386997A25D6CCB3901EB1B3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B04CDA4D9A22D73FBFFA2D18D411E5C2 /* Foundation.framework */; };
 		A0E10EC61918E230C36D0EA866740A69 /* Pods-MPParallaxView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C792CC6BA1A690536C436EA62AC563AD /* Pods-MPParallaxView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -24,13 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		07A5B9DF385B2E1464F26A4D6AF864D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0C5FA56BCCD5692B6445C3978B4D8BA1;
-			remoteInfo = "MPParallaxView-MPParallaxView";
-		};
 		444ABE6B622D0AE7E5742FAB81E6770D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -334,7 +326,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				5FAA6DEEE9A06D8CB715900514197FE6 /* PBXTargetDependency */,
 			);
 			name = MPParallaxView;
 			productName = MPParallaxView;
@@ -367,6 +358,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					BDB265EB9CA66C4B368BE6EC7AC2A63C = {
+						LastSwiftMigration = 0810;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -393,7 +389,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90AE6185C6B4433ADE7A668914B3C1D4 /* MPParallaxView.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,12 +438,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5FAA6DEEE9A06D8CB715900514197FE6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "MPParallaxView-MPParallaxView";
-			target = 0C5FA56BCCD5692B6445C3978B4D8BA1 /* MPParallaxView-MPParallaxView */;
-			targetProxy = 07A5B9DF385B2E1464F26A4D6AF864D5 /* PBXContainerItemProxy */;
-		};
 		77A6C562B6160E912C40FF7693EE2E00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MPParallaxView;
@@ -486,6 +475,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -732,6 +722,7 @@
 				PRODUCT_NAME = MPParallaxView;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
